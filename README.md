@@ -35,7 +35,7 @@ Unlocking Human Emotion Through AI
 
 | 🧩 Category           | ⚙️ Tools & Technologies                                                                                                                        |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| 📒 **Notebook**       | [Scribbler Notebook](https://scribble.world/)                                                                                                  |
+| 📒 **Notebook**       | [Scribbler Notebook](https://app.scribbler.live/)                                                                                                  |
 | 🌐 **Frontend**       | HTML, CSS, JavaScript                                                                                                                          |
 | 🧠 **AI Models**      | - [Groq LLaMA-4](https://groq.com/) for emotion interpretation <br> - WebLLM (runs locally using WebGPU)                                       |
 | 🔊 **Voice Features** | - [OpenAI TTS](https://platform.openai.com/docs/guides/text-to-speech) for speaking responses <br> - Browser Audio APIs for speech recognition |
