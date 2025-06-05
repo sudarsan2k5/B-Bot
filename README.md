@@ -1,67 +1,79 @@
-# 🤖 B-Bot: Your Emotion-Aware AI Companion
-Unlocking Human Emotion Through AI 
-> 🚀 Built for the [Summer of Scribbling 2025 Hackathon](https://hub.scribbler.live)
-# System Architecture Overview
-![Project System Architecture](https://github.com/user-attachments/assets/01167513-30cd-496d-ad75-395d3a2e2dd5)
 
-# Prerequisite
-
-| Item                | Description                                                                                                      |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| **OpenAI API Key**  | Get your API key [here](https://platform.openai.com/settings/organization/api-keys).                             |
-| **Groq API Key**    | Get your API key [here](https://console.groq.com/keys).                                                          |
-| **Web LLM**         | Reference: [Web LLM GitHub](https://github.com/mlc-ai/web-llm) <br> ⚠️ First load: 3–4 min, Subsequent: ~25 sec. |
-| **Notebook Access** | Click the red button at the top-right corner to take the notebook out of sandbox. 
-
-# 🎭 B-Bot: Your Emotion-Aware AI Companion
-
-**B-Bot** is a browser-based app that understands how you feel just by looking at your face — and responds with empathy. It combines cutting-edge AI tools to create a hands-free, emotionally aware conversation experience.
+# 🤖 **B-Bot: Your Emotion-Aware AI Companion**  
+**Unlocking Human Emotion Through AI**  
+> 🚀 A project built for the [Summer of Scribbling 2025 Hackathon](https://hub.scribbler.live)
 
 ---
 
-## 🔍 What It Does
+## 🧠 Overview
 
-| 🔧 Feature                       | 💡 Description                                                                                        |
-| -------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| 📸 **Face Snapshot**             | Captures an image from your webcam in real time.                                                      |
-| 🧠 **Emotion Detection (Groq)**  | Uses Groq’s **LLaMA-4** model to interpret your facial expression and describe your emotion in words. |
-| 💬 **Empathetic Reply (WebLLM)** | Local LLM generates a natural, kind response based on how you're feeling — like a caring friend.      |
-| 🔊 **Text-to-Speech (OpenAI)**   | Speaks the AI's reply using OpenAI’s TTS API, simulating a real conversation.                         |
-| 🗣️ **Voice Reply (STT)**         | Optional voice input lets you talk back — or just let the cycle continue with updated emotions.       |
+**B-Bot** is a browser-based AI companion that can **see your face**, **sense your emotion**, and **respond with empathy** — in real-time. It combines cutting-edge generative AI tools and browser APIs to create an emotionally intelligent, hands-free conversation experience.
 
 ---
 
-## 🛠️ Tools & Technologies Used
+## 🖼️ System Architecture
 
-| 🧩 Category           | ⚙️ Tools & Technologies                                                                                                                        |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| 📒 **Notebook**       | [Scribbler Notebook](https://app.scribbler.live/)                                                                                                  |
-| 🌐 **Frontend**       | HTML, CSS, JavaScript                                                                                                                          |
-| 🧠 **AI Models**      | - [Groq LLaMA-4](https://groq.com/) for emotion interpretation <br> - WebLLM (runs locally using WebGPU)                                       |
-| 🔊 **Voice Features** | - [OpenAI TTS](https://platform.openai.com/docs/guides/text-to-speech) for speaking responses <br> - Browser Audio APIs for speech recognition |
-| 🖥️ **Browser APIs**   | - Webcam via MediaDevices API <br> - Audio capture via Web Speech API.                                                                         |
+![System Architecture](https://github.com/user-attachments/assets/01167513-30cd-496d-ad75-395d3a2e2dd5)
 
 ---
 
+## ⚙️ Prerequisites
+
+| 🔑 Requirement         | 📌 Description                                                                                                   |
+|------------------------|------------------------------------------------------------------------------------------------------------------|
+| **OpenAI API Key**     | Get your key from [OpenAI Platform](https://platform.openai.com/settings/organization/api-keys).               |
+| **Groq API Key**       | Generate from [Groq Console](https://console.groq.com/keys).                                                    |
+| **WebLLM**             | Setup guide on [WebLLM GitHub](https://github.com/mlc-ai/web-llm). <br> ⏱️ First load: ~3–4 min, then ~25 sec. |
+| **Notebook Access**    | Click the 🔴 red button in the top-right to take the notebook **out of sandbox** before running.                |
+
 ---
 
-## 🧪 How to Run
-### 📎 [Open the Notebook in Scribbler](https://app.scribbler.live/?jsnb=github:sudarsan2k5/B-Bot/B-Bot.jsnb)
-1. Take the notebook out of sandbox by choosing the option from the toolbar
-2. Run all the cells one by one via 'Run' option from the toolbar
+## 🎯 What B-Bot Does
 
-## 📝 Submission Info
+| 🛠️ Feature                   | 💡 Description                                                                                           |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------|
+| 📸 **Face Snapshot**         | Captures your image via webcam in real-time.                                                              |
+| 🧠 **Emotion Detection**     | Uses **Groq’s LLaMA-4 model** to detect your emotion from the image.                                       |
+| 💬 **Empathetic Reply**      | Local LLM (WebLLM) generates a warm, caring message based on detected emotion.                            |
+| 🔊 **AI Voice Response**     | Speaks the message using **OpenAI’s TTS** API — like a thoughtful friend.                                 |
+| 🗣️ **Voice Input**           | Speak your replies using browser audio APIs — B-Bot updates its response based on your new expression.     |
 
-- **Team Name**: ZOD  
-- **Notebook**: [`B-Bot`](https://app.scribbler.live/?jsnb=github:sudarsan2k5/B-Bot/B-Bot.jsnb)
-- **Hackathon**: Summer of Scribbling 2025  
-- **GitHub Repo**: [B-Bot](https://github.com/sudarsan2k5/B-Bot)
 ---
 
-> Built by [TEAM ZOD](https://github.com/sudarsan2k5/)
+## 🧰 Tech Stack
 
+| 🔧 Category         | 🧠 Tools & Technologies                                                                                                                  |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| 💻 **Frontend**     | HTML, CSS, JavaScript                                                                                                                    |
+| 🧠 **AI Models**    | - [Groq LLaMA-4](https://groq.com/) <br> - [WebLLM (local)](https://github.com/mlc-ai/web-llm)                                            |
+| 🔉 **Voice Features** | - [OpenAI TTS](https://platform.openai.com/docs/guides/text-to-speech) <br> - Browser Web Speech API for voice input                   |
+| 🖥️ **Browser APIs** | Webcam: `MediaDevices.getUserMedia` <br> Audio Input: `webkitSpeechRecognition`, `SpeechRecognition`                                     |
+| 📒 **Notebook**     | [Scribbler Notebook](https://app.scribbler.live) – for interactive code execution                                                        |
 
+---
 
-## 🌟 Experience
+## 🚀 How to Run It
 
-> ### Imagine talking to an AI that **sees you, understands how you feel**, and **responds with care** — all inside your browser.
+### ▶️ [Launch the Notebook on Scribbler](https://app.scribbler.live/?jsnb=github:sudarsan2k5/B-Bot/B-Bot.jsnb)
+
+1. Take the notebook **out of sandbox** (use the toolbar).
+2. Click **Run All** or run each cell manually to start your AI-powered interaction.
+
+---
+
+## 📦 Submission Details
+
+- **🏷️ Team**: ZOD  
+- **📝 Notebook**: [`B-Bot`](https://app.scribbler.live/?jsnb=github:sudarsan2k5/B-Bot/B-Bot.jsnb)  
+- **🏁 Hackathon**: Summer of Scribbling 2025  
+- **🔗 GitHub**: [github.com/sudarsan2k5/B-Bot](https://github.com/sudarsan2k5/B-Bot)
+
+> 👨‍💻 Built with love by [**TEAM ZOD**](https://github.com/sudarsan2k5/)
+
+---
+
+## 🌟 The Experience
+
+> **Imagine this**: You're having a tough day. You open your browser.  
+> B-Bot sees you, understands your emotion, and gently speaks to you —  
+> just like a friend who really *gets* how you feel. 💛
